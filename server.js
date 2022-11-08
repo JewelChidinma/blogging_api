@@ -18,7 +18,7 @@ app.use('/users', UserRouter);
 app.use('/articles', ArticleRouter);
 
 
-mongoose.connect('mongodb://localhost:27017/blog')
+mongoose.connect('mongodb+srv://jewelchidinma:mmalistic41023@chidinma.tuuogai.mongodb.net/blogging_api?retryWrites=true&w=majority')
 
 mongoose.connection.on("connected", () => {
 	console.log("Connected to MongoDB Successfully");
